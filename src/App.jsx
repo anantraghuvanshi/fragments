@@ -5,9 +5,12 @@ function App() {
   return (
     <>
       <h1>Hello World</h1>
-      <ul class="list-group">
+      {foodItems.length === 0 && <h3>I am still hungry</h3>}
+      <ul className="list-group">
         {foodItems.map((items) => (
-          <li class="list-group-item">{items}</li>
+          <li key={items} className="list-group-item">
+            {items}
+          </li>
         ))}
       </ul>
     </>
