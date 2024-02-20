@@ -3,11 +3,12 @@ import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
 
 function App() {
+  let foodItems = ["Dal", "Milk", "Vegetables"];
   return (
     <>
       <h1>Hello World</h1>
-      <ErrorMessage></ErrorMessage>
-      <FoodItems></FoodItems>
+      <ErrorMessage items={foodItems}></ErrorMessage>
+      <FoodItems items={foodItems}></FoodItems>
     </>
   );
 }
