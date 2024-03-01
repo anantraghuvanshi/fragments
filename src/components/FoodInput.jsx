@@ -1,12 +1,10 @@
-const FoodInput = () => {
-  const handleOnchange = () => {};
-
+const FoodInput = ({ handleOnchange }) => {
   return (
     <input
       className="foodInput"
       type="text"
       placeholder="Enter your own item"
-      onChange={handleOnchange()}
+      onChange={handleOnchange}
     />
   );
 };
