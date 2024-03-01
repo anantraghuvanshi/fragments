@@ -1,8 +1,4 @@
-const Items = ({ foodItem }) => {
-  const handleBuyButtonClicked = (event) => {
-    console.log(`${foodItem} is bought`);
-  };
-
+const Items = ({ foodItem, handleBuyButton }) => {
   return (
     <li className="list-group-item">
       <span>{foodItem}</span>
